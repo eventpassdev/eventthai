@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'jaxx2104.info',
-    description: 'プログラムとバグが好き',
-    author: 'jaxx2104',
+    title: 'EventThai',
+    description: 'EventThai',
+    author: 'EventThai',
   },
   pathPrefix: '/',
   plugins: [
@@ -40,8 +40,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'jaxx2104',
-        short_name: 'jaxx2104.info',
+        name: 'EventThai',
+        short_name: 'EventThai',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#f44336',
