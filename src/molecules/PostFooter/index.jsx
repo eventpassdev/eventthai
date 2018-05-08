@@ -10,16 +10,9 @@ class PostFooter extends React.Component {
     const author = get(data, 'meta.author')
 
     return (
-      <div className="post-footer">
+      <div className="post-footer has-text-centered">
         <hr />
-        <p>
-          {title}
-          <Link to="/profile/">
-            <br />
-            <strong>{author}</strong> on Profile
-          </Link>
-        </p>
-        <hr />{' '}
+        <p>Posted by EventThai</p>
       </div>
     )
   }
