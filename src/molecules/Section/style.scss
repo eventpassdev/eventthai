@@ -1,0 +1,16 @@
+h2 {
+  font-family: BasisGrotesqueProMonoRegular, andale mono, monospace !important;
+  font-size: 1.4rem !important;
+  font-weight: 800 !important;
+}
+
+hr {
+  border-top: 3px solid #f05f40 !important;
+  max-width: 50px !important;
+  margin: auto !important;
+  margin-top: 1rem !important;
+
+  &.is-danger {
+    border-color: white !important;
+  }
+}

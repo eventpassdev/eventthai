@@ -1,0 +1,94 @@
+{
+  "name": "eventthai",
+  "version": "0.1.0",
+  "description": "Gatsby starter for bulma a blog",
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "lint:text": "textlint src/pages/**/index.md",
+    "lint:textfix": "textlint --fix src/pages/**/index.md",
+    "precommit": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaxx2104/gatsby-starter-bulma.git"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "author": "Futoshi Iwashita <jaxx2104@gmail.com>",
+  "license": "ISC",
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "npm run format",
+      "git add"
+    ],
+    "*.json": [
+      "npm run format",
+      "git add"
+    ],
+    "*.css": [
+      "npm run format",
+      "git add"
+    ],
+    "*.scss": [
+      "npm run format",
+      "git add"
+    ],
+    "*.md": [
+      "npm run lint:textfix",
+      "git add"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/jaxx2104/gatsby-starter-bulma/issues"
+  },
+  "homepage": "https://github.com/jaxx2104/gatsby-starter-bulma#readme",
+  "devDependencies": {
+    "animate.css": "^3.5.2",
+    "babel-eslint": "^7.2.3",
+    "bulma": "^0.7.1",
+    "devicon": "https://github.com/konpa/devicon.git#v2.2",
+    "eslint": "^4.2.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-react": "^7.1.0",
+    "font-awesome": "^4.7.0",
+    "gh-pages": "0.12.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2",
+    "moment": "^2.18.1",
+    "prettier": "^1.5.3",
+    "textlint": "^8.2.1",
+    "wowjs": "^1.1.3"
+  },
+  "dependencies": {
+    "gatsby": "^1.8.13",
+    "gatsby-link": "^1.6.5",
+    "gatsby-plugin-google-analytics": "^1.0.1",
+    "gatsby-plugin-manifest": "^1.0.1",
+    "gatsby-plugin-nprogress": "^1.0.1",
+    "gatsby-plugin-offline": "^1.0.1",
+    "gatsby-plugin-preact": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby-plugin-sass": "^1.0.1",
+    "gatsby-plugin-sharp": "^1.6.0",
+    "gatsby-remark-copy-linked-files": "^1.5.0",
+    "gatsby-remark-images": "^1.5.0",
+    "gatsby-remark-prismjs": "^1.2.0",
+    "gatsby-remark-responsive-iframe": "^1.4.1",
+    "gatsby-remark-smartypants": "^1.4.1",
+    "gatsby-source-filesystem": "^1.4.1",
+    "gatsby-transformer-remark": "^1.6.3",
+    "gatsby-transformer-sharp": "^1.6.0",
+    "lodash": "^4.15.0",
+    "react-lazyload": "^2.2.7",
+    "react-responsive-grid": "^0.3.4",
+    "react-typography": "^0.15.10"
+  }
+}
