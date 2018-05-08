@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import './style.scss'
-import Ad from '../../atoms/Ad'
 import PostFooter from '../../molecules/PostFooter'
 
 class PostContent extends React.Component {
@@ -35,7 +34,6 @@ class PostContent extends React.Component {
 
     return (
       <div className="page-content">
-        {isIndex ? '' : <Ad />}
         <div
           className="content"
           dangerouslySetInnerHTML={{
@@ -43,7 +41,6 @@ class PostContent extends React.Component {
           }}
         />
         {isIndex ? this.more(description, path) : ''}
-        {isIndex ? '' : <Ad />}
         {isIndex ? '' : <PostFooter data={site} />}
       </div>
     )
