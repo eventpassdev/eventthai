@@ -5,21 +5,15 @@ import './style.scss'
 
 class Footer extends React.Component {
   render() {
-    const title = get(this.props, 'title')
-    const author = get(this.props, 'author')
 
     return (
-      <div className="footer">
+      <footer className="footer">
         <div className="container">
-          <p>
-            {title}
-            <Link to="/profile/">
-              <br />
-              <strong>{author}</strong> on Profile
-            </Link>
-          </p>
+          <div className="content has-text-centered">
+            <p>&copy; COPYRIGHT 2018 EvetThai co.,Ltd.</p>
+          </div>
         </div>
-      </div>
+      </footer>
     )
   }
 }

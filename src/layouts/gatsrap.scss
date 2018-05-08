@@ -1,6 +1,9 @@
 // 1. Import the initial variables
 @import "node_modules/bulma/sass/utilities/initial-variables";
 
+// Add a serif family
+$family-sans-serif: 'db_heaventcond', sans-serif;
+
 // 2. Set your own initial variables
 $white: #fff;
 $black: #455a64;
@@ -28,3 +31,7 @@ $white: hsl(0, 0%, 100%) !default;
 
 // 4. Import the rest of Bulma
 @import "node_modules/bulma/bulma";
+
+// Custom Fonts
+// @import url('https://fonts.googleapis.com/css?family=Kanit');
+@import "font.css";
