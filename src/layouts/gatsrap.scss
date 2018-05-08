@@ -26,36 +26,5 @@ $white-ter: hsl(0, 0%, 96%) !default;
 $white-bis: hsl(0, 0%, 98%) !default;
 $white: hsl(0, 0%, 100%) !default;
 
-// Add a serif family
-$family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI,
-  Roboto, Helvetica Neue, Arial, sans-serif;
-
-// Responsiveness
-$tablet: 540px;
-$desktop: 640px;
-$widescreen: 740px;
-$fullhd: 840px;
-
-$weight-light: 400;
-$weight-normal: 500;
-$weight-semibold: 600;
-$weight-bold: 700;
-
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $red;
-$primary-invert: $white;
-
-// navbar
-$navbar-background-color: $red;
-$navbar-item-color: $white;
-$navbar-height: 4rem;
-$navbar-item-hover-color: $red;
-$navbar-item-active-color: $grey-lighter;
-$title-color: $grey;
-$title-size: $size-4;
-$title-weight: $weight-bold;
-$content-heading-weight: $weight-bold;
-
 // 4. Import the rest of Bulma
 @import "node_modules/bulma/bulma";

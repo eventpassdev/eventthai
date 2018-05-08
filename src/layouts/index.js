@@ -2,14 +2,15 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
 import { siteMetadata } from '../../gatsby-config'
-import Navigation from '../molecules/Navigation'
-import Footer from '../molecules/Footer'
 
 import './gatsrap.scss'
 import 'animate.css/animate.css'
 import 'font-awesome/css/font-awesome.css'
 import 'prismjs/themes/prism-okaidia.css'
 import 'devicon/devicon.min.css'
+
+import Navigation from '../molecules/Navigation'
+import Footer from '../molecules/Footer'
 
 class Template extends React.Component {
   componentDidMount() {

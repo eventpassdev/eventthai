@@ -6,25 +6,23 @@ class SiteNavi extends React.Component {
   render() {
     const { location, title } = this.props
     return (
-      <nav className="navbar">
+      <nav id="navbar" className="navbar is-spaced">
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
-              <h1>
-                {title}
-              </h1>
+              <h4 className="title is-4 has-text-white">EventThai</h4>
             </Link>
             <div
               className="navbar-burger burger"
-              data-target="navMenuDocumentation"
+              data-target="navMenu"
             >
               <span />
               <span />
               <span />
             </div>
           </div>
-          <div id="navMenuDocumentation" className="navbar-menu">
-            <div className="navbar-start">
+          <div id="navMenu" className="navbar-menu">
+            <div className="navbar-end">
               <Link
                 to="/"
                 className={
@@ -36,72 +34,59 @@ class SiteNavi extends React.Component {
                 Home
               </Link>
               <Link
-                to="/profile"
+                to="#services"
                 className={
-                  location.pathname === '/profile'
+                  location.pathname === '/services'
                     ? 'navbar-item is-active'
                     : 'navbar-item'
                 }
               >
-                Profile
+                Services
               </Link>
-            </div>
-            <div className="navbar-end">
-              <a
-                className="navbar-item"
-                href="https://github.com/jaxx2104/"
-                target="_blank"
+              <Link
+                to="#work"
+                className={
+                  location.pathname === '/work'
+                    ? 'navbar-item is-active'
+                    : 'navbar-item'
+                }
               >
-                <span className="icon">
-                  <i className="fa fa-github" />
-                </span>
-              </a>
-              <a
-                className="navbar-item"
-                href="https://twitter.com/jaxx2104/"
-                target="_blank"
+                Work
+              </Link>
+              <Link
+                to="#about"
+                className={
+                  location.pathname === '/about'
+                    ? 'navbar-item is-active'
+                    : 'navbar-item'
+                }
               >
-                <span className="icon">
-                  <i className="fa fa-twitter" />
-                </span>
-              </a>
+                About
+              </Link>
+              <Link
+                to="#partners"
+                className={
+                  location.pathname === '/partners'
+                    ? 'navbar-item is-active'
+                    : 'navbar-item'
+                }
+              >
+                Partners
+              </Link>
+              <Link
+                to="#contact"
+                className={
+                  location.pathname === '/contact'
+                    ? 'navbar-item is-active'
+                    : 'navbar-item'
+                }
+              >
+                Contact
+              </Link>
             </div>
           </div>
         </div>
       </nav>
-      /*
-      <nav className="navbar sticky-top navbar-inverse bg-danger">
-        <div className="container">
-          <Link to="/">
-            <h1 className="navbar-brand mb-0">
-              {title}
-            </h1>
-          </Link>
-          <ul className="navbar-nav">
-            <li
-              className={
-                location.pathname === '/' ? 'nav-item active' : 'nav-item'
-              }
-            >
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
-            <li
-              className={
-                location.pathname === '/profile/'
-                  ? 'nav-item active'
-                  : 'nav-item'
-              }
-            >
-              <Link to="/profile/" className="nav-link">
-                Profile
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      */
     )
   }
 }

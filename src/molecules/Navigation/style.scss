@@ -1,7 +1,41 @@
 .navbar {
-  h1 {
-    font-size: 1.3rem !important;
-    font-weight: 800 !important;
-    font-family: Helvetica Neue !important;
+  background-color: #D91F26;
+  min-height: 3.25rem;
+  position: relative;
+  z-index: 30;
+}
+
+.navbar-end, a {
+  margin-right: 15px;
+}
+
+link:hover, a.navbar-item.is-active, a.navbar-item:hover {
+  background-color: #ffffff;
+  color: #da3a2f;
+}
+
+.navbar-item {
+  color: #ffffff;
+  display: block;
+  line-height: 1.5;
+  padding: .5rem .75rem;
+  position: relative;
+}
+
+.title.is-4 {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1087px){
+  .navbar-menu {
+      background-color: #D91F26;
+      box-shadow: 0 8px 16px rgba(10,10,10,.1);
+      padding: .5rem 0;
+  }
+}
+
+@media screen and (min-width: 1088px){
+  a.navbar-item.is-active:not(:hover), .navbar-link.is-active:not(:hover) {
+    background-color: #ffffff;
   }
 }
