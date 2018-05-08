@@ -42,10 +42,7 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script
-            async
-            src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-          />
+          <script async src="//bulma.io/vendor/clipboard-1.7.1.min.js" />
           <script async src="//buttons.github.io/buttons.js" />
           <script async src="//platform.twitter.com/widgets.js" />
         </body>

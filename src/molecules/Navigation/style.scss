@@ -5,6 +5,20 @@
   z-index: 30;
 }
 
+.navbar-burger span {
+  color:#ffffff;
+  background-color: currentColor;
+  display: block;
+  height: 1px;
+  left: calc(50% - 8px);
+  position: absolute;
+  transform-origin: center;
+  transition-duration: 86ms;
+  transition-property: background-color, opacity, transform;
+  transition-timing-function: ease-out;
+  width: 16px;
+}
+
 .navbar-end, a {
   margin-right: 15px;
 }

@@ -14,14 +14,14 @@ class SiteNavi extends React.Component {
             </Link>
             <div
               className="navbar-burger burger"
-              data-target="navMenu"
+              data-target="navMenuIndex"
             >
               <span />
               <span />
               <span />
             </div>
           </div>
-          <div id="navMenu" className="navbar-menu">
+          <div id="navMenuIndex" className="navbar-menu">
             <div className="navbar-end">
               <Link
                 to="/"
