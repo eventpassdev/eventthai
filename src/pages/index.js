@@ -20,7 +20,7 @@ class BlogIndex extends React.Component {
     sortedPosts.forEach((data, i) => {
       const layout = get(data, 'post.frontmatter.layout')
       const path = get(data, 'post.path')
-      if (layout === 'post' && path !== '/404/') {
+      if (layout === 'post' && path !== '/') {
         pageLinks.push(
           <LazyLoad height={500} offset={100} key={i}>
             <Post data={data.post} site={site} isIndex={true} key={i} />
