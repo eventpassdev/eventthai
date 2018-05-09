@@ -37,9 +37,9 @@ class BlogIndex extends React.Component {
       <section className="hero is-fullheight">
         <div className="hero-body">
           <div className="container">
-            <div className="has-text-centered"></div>
+            <div className="has-text-centered soon-title"><img width="256px" src="https://i.imgur.com/pYW0YqL.png" title="EventPass Logo" /></div>
             <Helmet title={get(site, 'title')} />
-            <div className="has-text-centered"><h2 className="title is-2 has-text-white">พบกับอีเว้นท์ไทยรูปแบบใหม่ เร็วๆนี้</h2></div>
+            <div className="has-text-centered"><h3 className="title is-3 has-text-white">พบกับอีเว้นท์ไทยรูปแบบใหม่ เร็วๆนี้</h3></div>
           </div>
         </div>
       </section>
