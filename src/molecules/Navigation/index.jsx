@@ -31,7 +31,7 @@ class SiteNavi extends React.Component {
                     : 'navbar-item'
                 }
               >
-                Home
+                <i className="fa fa-home" aria-hidden="true"></i>&nbsp;Home
               </Link>
               <Link
                 to="#services"
@@ -41,7 +41,7 @@ class SiteNavi extends React.Component {
                     : 'navbar-item'
                 }
               >
-                Services
+                <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;Services
               </Link>
               <Link
                 to="#work"
@@ -51,7 +51,7 @@ class SiteNavi extends React.Component {
                     : 'navbar-item'
                 }
               >
-                Work
+                <i className="fa fa-briefcase" aria-hidden="true"></i>&nbsp;Work
               </Link>
               <Link
                 to="#about"
@@ -61,7 +61,7 @@ class SiteNavi extends React.Component {
                     : 'navbar-item'
                 }
               >
-                About
+                <i className="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About
               </Link>
               <Link
                 to="#partners"
@@ -71,7 +71,7 @@ class SiteNavi extends React.Component {
                     : 'navbar-item'
                 }
               >
-                Partners
+                <i className="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Partners
               </Link>
               <Link
                 to="#contact"
@@ -81,7 +81,7 @@ class SiteNavi extends React.Component {
                     : 'navbar-item'
                 }
               >
-                Contact
+                <i className="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Contact
               </Link>
             </div>
           </div>
