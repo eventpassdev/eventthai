@@ -35,3 +35,11 @@ $white: hsl(0, 0%, 100%) !default;
 // Custom Fonts
 // @import url('https://fonts.googleapis.com/css?family=Kanit');
 @import "font.css";
+
+body {
+    color: #ffffff;
+    background-color: #D91F26;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}

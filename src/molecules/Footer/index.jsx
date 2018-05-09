@@ -9,9 +9,9 @@ class Footer extends React.Component {
     return (
       <footer className="footer">
         <div className="container">
-          <div className="content has-text-centered">
+          {/* <div className="content has-text-centered">
             <p>&copy; COPYRIGHT 2018 EvetThai co.,Ltd.</p>
-          </div>
+          </div> */}
         </div>
       </footer>
     )

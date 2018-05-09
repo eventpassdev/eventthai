@@ -10,7 +10,7 @@ import 'prismjs/themes/prism-okaidia.css'
 import 'devicon/devicon.min.css'
 
 import Navigation from '../molecules/Navigation'
-import Footer from '../molecules/Footer'
+// import Footer from '../molecules/Footer'
 
 class Template extends React.Component {
   componentDidMount() {
@@ -29,7 +29,7 @@ class Template extends React.Component {
       <div className="template">
         <Navigation title={siteMetadata.title} {...this.props} />
         {children()}
-        <Footer title={siteMetadata.title} author={siteMetadata.author} />
+        {/* <Footer title={siteMetadata.title} author={siteMetadata.author} /> */}
       </div>
     )
   }

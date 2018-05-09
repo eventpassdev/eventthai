@@ -7,7 +7,7 @@ class SiteNavi extends React.Component {
     const { location, title } = this.props
     return (
       <nav id="navbar" className="navbar is-spaced">
-        <div className="container">
+        {/* <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
               <h4 className="title is-4 has-text-white">EventThai</h4>
@@ -85,7 +85,7 @@ class SiteNavi extends React.Component {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </nav>
     )
   }
