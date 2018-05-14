@@ -74,9 +74,10 @@
     "gatsby-plugin-manifest": "^1.0.1",
     "gatsby-plugin-nprogress": "^1.0.1",
     "gatsby-plugin-offline": "^1.0.1",
+    "gatsby-plugin-postcss-sass": "^1.0.20",
     "gatsby-plugin-preact": "^1.0.1",
     "gatsby-plugin-react-helmet": "^1.0.1",
-    "gatsby-plugin-sass": "^1.0.1",
+    "gatsby-plugin-sass": "^1.0.26",
     "gatsby-plugin-sharp": "^1.6.0",
     "gatsby-remark-copy-linked-files": "^1.5.0",
     "gatsby-remark-images": "^1.5.0",
@@ -87,8 +88,10 @@
     "gatsby-transformer-remark": "^1.6.3",
     "gatsby-transformer-sharp": "^1.6.0",
     "lodash": "^4.15.0",
+    "node-sass": "^4.9.0",
     "react-lazyload": "^2.2.7",
     "react-responsive-grid": "^0.3.4",
-    "react-typography": "^0.15.10"
+    "react-typography": "^0.15.10",
+    "sass-loader": "^4.1.1"
   }
 }
